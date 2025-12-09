@@ -10,7 +10,7 @@ Project Poster: https://www.canva.com/design/DAG51Qi3g34/m_dAl-6TTANWLCMgyWGtmg/
 <img width="847" height="633" alt="image" src="https://github.com/user-attachments/assets/2cac0567-5af2-44e3-9794-2a35824d8d6b" />
 
 
-#Introduction
+# Introduction
 
 Short-term rentals in New York City vary widely, and hosts and renters often struggle to understand why some listings are priced the way they are. In this project, we investigate patterns in NYC rental listings to answer two main questions: (1) How do listing characteristics—such as bedrooms, beds, baths, and review activity—naturally group together? and (2) Can a simple linear model predict price from these features? Our overall goal is to identify meaningful rental segments and test whether basic listing attributes are strong predictors of price.
 
@@ -26,7 +26,7 @@ Before analysis, we cleaned the dataset by converting “Studio” to 1 bedroom,
 
 To better understand patterns in the data, we produced several visual summaries, including a correlation heatmap to show how numeric features relate to each other and scatterplots of price vs. bedrooms, colored by clusters. These early visuals helped us see that price had only modest correlations with the basic size features and almost no correlation with review activity.
 
-#Methods
+# Methods
 Preprocessing
 
 We prepared the dataset through the following steps:
@@ -80,7 +80,7 @@ RMSE ≈ 325.73
 
 These results show that the selected listing attributes explain only about 9% of price variation. The actual vs. predicted scatterplot showed wide error spread, and the residual plot revealed patterns indicating model bias. In short, simple linear models with these features lack the complexity needed to capture real price dynamics in NYC.
 
-#Storytelling & Conclusion
+# Storytelling & Conclusion
 Key Insights
 
 Clustering revealed meaningful rental segments.
@@ -113,7 +113,7 @@ What We Learned
 
 This project helped us practice end-to-end data science: cleaning messy data, preparing categorical variables, scaling for clustering, choosing k using proper metrics, and evaluating model fit. We learned that clustering can reveal useful descriptive insights, while prediction requires deeper feature engineering and more flexible models.
 
-#Impact Section
+# Impact Section
 
 Data projects involving housing always come with social and ethical implications. While understanding rental patterns can help hosts set fair prices and help renters compare listings, the same insights can influence markets in unintended ways. For example, more efficient pricing algorithms could lead to rising rental prices or worsen housing scarcity in certain neighborhoods. Additionally, data-driven decision-making that ignores community needs or local regulations could amplify existing inequalities.
 
