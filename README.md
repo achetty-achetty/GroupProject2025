@@ -14,7 +14,7 @@ Project Poster: https://www.canva.com/design/DAG51Qi3g34/m_dAl-6TTANWLCMgyWGtmg/
 
 Short-term rentals in New York City vary widely, and hosts and renters often struggle to understand why some listings are priced the way they are. In this project, we investigate patterns in NYC rental listings to answer two main questions: (1) How do listing characteristics—such as bedrooms, beds, baths, and review activity—naturally group together? and (2) Can a simple linear model predict price from these features? Our overall goal is to identify meaningful rental segments and test whether basic listing attributes are strong predictors of price.
 
-#About the Data
+# About the Data
 
 We used the 2024 New York City Airbnb-style listings dataset from Kaggle. The dataset provides information about rental features, host activity, and general listing characteristics. For our analysis, we focused on:
 
@@ -63,9 +63,9 @@ While k=2 had the highest score, k=4 provided a clearer and more interpretable s
 
 Linear Regression Model
 
-To test whether basic listing features can predict price, we trained a baseline linear regression model using an 80/20 train-test split. The model used bedrooms, beds, baths, reviews, reviews_per_month, and dummy variables as predictors.
+To test whether basic listing features can predict price, we trained a baseline linear regression model using an 80/20 train-test split. The model used bedrooms, beds, baths, reviews, reviews_per_month, and dummy variables as predictors. We then evaluated how well the model predicted prices based on listing features. Overall, our workflow involved data cleaning, feature engineering, clustering, and regression.
 
-#Evaluation
+# Evaluation
 Clustering Performance
 
 Silhouette scores suggest that clusters up to k=4 show meaningful structure, and our scatterplots confirmed that k=4 produced understandable grouping patterns. The four clusters reflect distinct rental categories, such as small low-priced rooms, mid-range units, and higher-priced larger apartments.
@@ -78,7 +78,7 @@ R² = 0.0908
 
 RMSE ≈ 325.73
 
-These results show that the selected listing attributes explain only about 9% of price variation. The actual vs. predicted scatterplot showed wide error spread, and the residual plot revealed patterns indicating model bias. In short, simple linear models with these features lack the complexity needed to capture real price dynamics in NYC.
+Our analysis revealed clear patterns in Airbnb listing characteristics across New York City. The regression model provided further insight by quantifying how strongly these features influence price, although the model achieved a relatively low R² value of approximately 0.09, indicating that only about 9% of price variation is explained by the included variables. The RMSE of around 300 suggests substantial variability in listing prices that cannot be fully captured by the available features, likely due to unmeasured factors such as amenities, building quality, or neighborhood desirability. Visualizations such as the actual vs. predicted plot and residual plot showed that the model systematically underestimates and overestimates prices for certain listings, reinforcing the high variability in Airbnb pricing. Overall, the results highlight meaningful relationships between listing attributes and price, while also demonstrating the limitations of predicting Airbnb prices using only structural and review-based features.
 
 # Storytelling & Conclusion
 Key Insights
@@ -117,4 +117,4 @@ This project helped us practice end-to-end data science: cleaning messy data, pr
 
 Data projects involving housing always come with social and ethical implications. While understanding rental patterns can help hosts set fair prices and help renters compare listings, the same insights can influence markets in unintended ways. For example, more efficient pricing algorithms could lead to rising rental prices or worsen housing scarcity in certain neighborhoods. Additionally, data-driven decision-making that ignores community needs or local regulations could amplify existing inequalities.
 
-Because of this, analytical tools like ours should be used carefully. Stakeholders should consider neighborhood impacts, community feedback, and regulatory guidelines before applying segmentation or pricing models to real markets.
+Because of this, analytical tools like ours should be used carefully. Stakeholders should consider neighborhood impacts, community feedback, and regulatory guidelines before applying segmentation or pricing models to real markets. Our project highlights the importance of using data responsibly, especially in housing-related markets. Understanding the potential social and ethical impacts is just as important as the technical findings.
