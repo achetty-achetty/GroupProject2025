@@ -12,7 +12,7 @@ Project Poster: https://www.canva.com/design/DAG51Qi3g34/m_dAl-6TTANWLCMgyWGtmg/
 
 # Introduction
 
-Short-term rentals in New York City vary widely, and hosts and renters often struggle to understand why some listings are priced the way they are. In this project, we investigate patterns in NYC rental listings to answer two main questions: (1) How do listing characteristics—such as bedrooms, beds, baths, and review activity—naturally group together? and (2) Can a simple linear model predict price from these features? Our overall goal is to identify meaningful rental segments and test whether basic listing attributes are strong predictors of price.
+Short-term rentals in New York City vary widely, and hosts and renters often struggle to understand why some listings are priced the way they are. In this project, we investigate patterns in NYC rental listings to answer two main questions: (1) How do listing characteristicssuch as bedrooms, beds, baths, and review activity—naturally group together? and (2) Can a simple linear model predict price from these features? Our overall goal is to identify meaningful rental segments and test whether basic listing attributes are strong predictors of price.
 
 # About the Data
 
@@ -31,7 +31,7 @@ Preprocessing
 
 We prepared the dataset through the following steps:
 
-Converted non-numeric entries (e.g., baths, “Studio”) into usable numeric forms.
+Converted non-numeric entries into usable numeric forms.
 
 Removed incomplete rows to avoid bias from missing data.
 
